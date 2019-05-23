@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Smart windows control</title>
+<style>
+.but_def{
+    background-color: #79B9FF;
+    border: none;
+    font-size: 28px;
+    color: white;
+    padding: 16px 64px;
+    text-decoration: none;
+    border-radius: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.but_def:hover {background-color: #B9B9FF}
+</style>
+  </head>
+  <body>
+	<center>	
+    <h1>Smart windows control</h1>
+    <form method = "post">
+    <br> 
+	{{res_str}}    
+	<br>  
+	<h2>Description :{{data_d}} </h2>  
+	<br>  
+	<h2>Wind_speed :{{data_w}} m/s</h2>	 
+	<br> 
+	<h2>Latitude :{{data_la}}</h2>	
+	<br>  
+	<h2> Longitude :{{data_lo}}</h2>	 
+	<br>   
+	<h2> Rain :{{rain}}</h2>
+	<br>  
+	<h1> Windows open degree:{{degree}}</h2>
+	<br>  
+    <input type="submit" name="submit" value="Open windows" class="but_def">
+    <br>
+    <input type="submit" name="submit" value="Close windows" class="but_def">
+    <br>
+    <input type="submit" name="submit" value="Open 15 degree" class="but_def">
+    <br>
+    <input type="submit" name="submit" value="Close 15 degree" class="but_def">
+    <br>
+    <input type="submit" name="submit" value="Int_open" class="but_def">
+    <br>
+    <input type="submit" name="submit" value="Int_close" class="but_def">
+    <br>
+    <input type="submit" name="submit" value="weather" class="but_def">
+    <br>
+
+    </form>
+	</center>
+  </body>
+</html>
